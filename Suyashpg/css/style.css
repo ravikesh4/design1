@@ -1,0 +1,207 @@
+/* @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap'); */
+
+
+
+@font-face {
+    font-family: Retina;
+    src: url("../fonts/retina/regulard1beb242654bdc4b926ed5366ebf727f.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Retina;
+    src: url("../fonts/retina/mediumdd4d083b06f910713c04c819e3e7bcda.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Retina;
+    src: url("../fonts/retina/bold131bfc1958d587afdc4f88de7053599f.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Retina;
+    src: url("../fonts/retina/black06b33e14c656f7af2ca8fe31a5b136bf.ttf");
+    font-weight: 900;
+}
+
+
+* {
+    font-family: "Retina", serif !important;
+}
+/* :root{
+    --bgColor: #000;
+} */
+
+
+li {
+    color: black;
+}
+.nav-link {
+    color: white;
+    
+}
+.slider-txt {
+    /* background-color: #ca28a7cc; */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    max-width: 400px;
+    border-radius: 2%;
+}
+    
+
+.img-height {
+    min-height: 500px !important;
+}
+.cursor {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10%;
+    color: black;
+}
+.icon {
+    color: rgb(177, 3, 168);
+}
+
+.slider-img {
+    min-height: 300px !important;
+}
+
+.txt-white {
+    color: white;
+}
+.txt-black {
+    color: rgb(0, 0, 0);
+}
+.txt-blue{
+    color: rgb(22, 129, 201);
+}
+
+.txt-small {
+    font-size: 13px;
+}
+
+.pg-card {
+    background-color: rgb(241, 241, 241);
+}
+.chat-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    /* background-color: rgb(17, 17, 17); */
+}
+.chat-button .chat-btn {
+    background-color: rgb(255, 5, 130);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: none;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: white;
+    font-weight: 600;
+}
+@keyframes glow {
+    from {
+      box-shadow: 0 0 5px rgb(231, 90, 196), 0 0 10px rgb(231, 90, 196), 0 0 15px rgb(219, 112, 153), 0 0 20px rgb(231, 90, 196);
+    }
+    
+    to {
+      box-shadow: 0 0 10px rgb(235, 138, 138), 0 0 15px rgb(243, 73, 73), 0 0 20px rgb(255, 0, 0);
+    }
+  }
+.team-img {
+    border-radius: 50%;
+}
+
+.uk-position-center .uk-padding h2.txt-black {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+/* new css  */
+
+.link-nav {
+    color: white !important; 
+    font-weight: 900 !important; 
+    font-size: 15px !important;
+}
+
+.link-nav:hover {
+    color: rgb(172, 172, 172) !important; 
+}
+
+.nav-header {
+    top:100;
+    background-color: black;
+}
+.uk-active {
+    color: rgb(207, 207, 207) !important;
+}
+.feature-card {
+    margin-left: 50px !important;
+    align-items: center;
+}
+
+#wrapper .team-txt {
+    visibility:hidden;
+    }
+    
+#wrapper:hover .team-txt{
+visibility:visible;
+background-color: rgba(41, 41, 41, 0.6);
+padding: 10px;
+}
+.chat-box { 
+    border-radius: 20px;
+}
+.uk-border-rounded .uk-fieldset .uk-margin .uk-input {
+    border-radius: 10px;
+    color: white;
+    /* align-items: center; */
+    font-weight: 800;
+}
+.uk-border-rounded .uk-fieldset .uk-margin .uk-input::placeholder {
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    /* border-radius: 10px; */
+}
+
+.uk-border-rounded .uk-fieldset .uk-margin .uk-select {
+    /* background-color: rgb(146, 146, 146); */
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .chat-box {
+        margin-right: 0px; 
+        width: 30%; 
+        /* border-radius: 20px; */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .slider-txt {
+        padding-top: 0;
+        margin: 0px;
+    }
+
+
+    .slider-para {
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+    }
+    .blog-txt {
+        white-space: nowrap; 
+        width: 260px; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .chat-button {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        /* background-color: rgb(17, 17, 17); */
+    }
+}

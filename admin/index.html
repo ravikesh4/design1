@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin - Dashboard</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/line_chart.js"></script>
+    <script src="js/col_chart.js"></script>
+    <script src="js/area_chart.js"></script>
+    <script src="js/pie_chart.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <!-- navbar section -->
+    <header>
+        <div uk-sticky>
+        <nav class="nav-color uk-navbar uk-container uk-container-expand" uk-navbar>
+            <div class="uk-navbar-left  uk-navbar-nav">
+                <ul class="uk-navbar-nav">
+                        <li class="uk-iconnav uk-hidden@m"><a href="#offcanvas-usage" uk-toggle><span uk-icon="menu"></span></a></li>
+                </ul>
+                <div class="uk-visible">
+                    <a href="index.html"><img src="images/logo.png" alt="" width="40" height="40"></a>
+                </div>
+            </div>
+            <div class="uk-navbar-right">
+        
+                <ul class="uk-navbar-nav">
+                        
+                    <li>
+                        <div class="uk-visible@m">
+                            <a class="uk-navbar-toggle"  uk-search-icon href="#"></a>
+                            <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                                <form class="uk-search uk-search-navbar uk-width-1-1">
+                                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="uk-hidden@m">
+                                <a class="uk-navbar-toggle" href="#" uk-search-icon></a>
+                                <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+                    
+                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <form class="uk-search uk-search-navbar uk-width-1-1">
+                                                <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                                            </form>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    </li>
+                    
+                    <li><a href="#" class="uk-text-bold"  uk-icon="mail"></a>
+                        <div class="uk-navbar-dropdown" uk-dropdown="mode: click">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active" >Mails</li>
+                                <li class="uk-nav-divider"><a href="#"><span uk-icon="mail"></span> This is a mail..</a></li>
+                                <li class="uk-nav-divider"><a href="#"><span uk-icon="mail"></span> This is a mail..</a></li>
+                                <li class="uk-nav-divider"><a href="#"><span uk-icon="mail"></span> This is a mail..</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class="uk-text-bold uk-visible@m"  uk-icon="bell"></a>
+                        <div class="uk-navbar-dropdown" uk-dropdown="mode: click">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active">Notifications</li>
+                                <li class="uk-nav-divider"><a href="#"><span uk-icon="mail"></span> This is a mail..</a></li>
+                                <li class="uk-nav-divider"><a href="#"><span uk-icon="mail"></span> This is a mail..</a></li>
+                                <li class="uk-nav-divider"><a href="#"><span uk-icon="mail"></span> This is a mail..</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/user.jpg" alt="" width="30" height="30" class="uk-border-circle" /></a>
+                        <div class="uk-navbar-dropdown" uk-dropdown="mode: click">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#"> <span uk-icon="user"></span> Profile</a></li>
+                                <li><a href="#"> <span uk-icon="cog"></span> Setting</a></li>
+                                <li><a href="#"> <span uk-icon="sign-out"></span> Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+        
+            </div>
+
+            <div id="offcanvas-usage" uk-offcanvas="push">
+                    <div class="uk-offcanvas-bar">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <div class=" uk-panel uk-panel-box uk-padding-small uk-border uk-margin-top" >
+                                <ul class="uk-nav uk-nav-parent-icon uk-list" data-uk-nav>
+                                        <li><h5 class="uk-text uk-text-bold">Applications</h5></li>
+                                        <li class="uk-active"><a class="nav-app" href="index.html"><span uk-icon="comment" class="uk-margin-small-right"></span> Dashboard</a></li>
+                                        <li class=""><a class="nav-app" href="forms.html"><span uk-icon="comment" class="uk-margin-small-right"></span> Form</a></li>
+                                        <li class=""><a class="nav-app" href="tables.html"><span uk-icon="file-text" class="uk-margin-small-right"></span> Tables</a></li>
+                                        <li class=""><a class="nav-app" href="cards.html"><span uk-icon="mail" class="uk-margin-small-right"></span> Cards</a></li>
+                                        <li class=""><a class="nav-app" href="#"><span uk-icon="calendar" class="uk-margin-small-right"></span> Task Board</a></li>
+                                        <li class=""><a class="nav-app" href="#"><span uk-icon="file-pdf" class="uk-margin-small-right"></span> Notes</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><h5 class="uk-text uk-text-bold">Menu</h5></li>
+                                        <li class="uk-active"><a class="nav-app" href="#"><span uk-icon="comment" class="uk-margin-small-right"></span> Dashboard</a></li>
+                                        <li class="uk-parent">
+                                            <a class="uk-link-text nav-app" href="#"><span uk-icon="file-text"></span> Forms</a>
+                                            <ul class="uk-nav-sub uk-list">
+                                                <li><a class="uk-link-text" href="#"><span uk-icon="cloud-upload"></span> File Upload</a></li>
+                                                <li><a class="uk-link-text" href="#"><span uk-icon="file"></span> Files</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="uk-parent">
+                                            <a class="uk-link-text nav-app" href="#"><span uk-icon="file-text"></span> Components</a>
+                                            <ul class="uk-nav-sub uk-list">
+                                                <li><a class="uk-link-text" href="#"><span uk-icon="cloud-upload"></span> File Upload</a></li>
+                                                <li><a class="uk-link-text" href="#"><span uk-icon="file"></span> Files</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="uk-parent">
+                                            <a class="uk-link-text nav-app" href="#"><span uk-icon="file-text"></span> Pages</a>
+                                            <ul class="uk-nav-sub uk-list">
+                                                <li><a class="uk-link-text" href="#"><span uk-icon="cloud-upload"></span> File Upload</a></li>
+                                                <li><a class="uk-link-text" href="#"><span uk-icon="file"></span> Files</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="uk-parent">
+                                            <a class="uk-link-text nav-app" href="#"><span uk-icon="file-text"></span> Plugins</a>
+                                            <ul class="uk-nav-sub uk-list">
+                                                <li><a class="uk-link-text" href="#"><span uk-icon="cloud-upload"></span> File Upload</a></li>
+                                                <li><a class="uk-link-text" href="#"><span uk-icon="file"></span> Files</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="uk-parent">
+                                            <a class="uk-link-text nav-app" href="#"><span uk-icon="file-text"></span> Plugins</a>
+                                            <ul class="uk-nav-sub uk-list">
+                                                <li><a class="uk-link-text" href="#"><span uk-icon="cloud-upload"></span> File Upload</a></li>
+                                                <li><a class="uk-link-text" href="#"><span uk-icon="file"></span> Files</a></li>
+                                            </ul>
+                                        </li>
+                                </ul>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+    
+    <div uk-grid class="content">
+        <!-- left navbar section  -->
+        <div class="uk-width-1-5@m" style="min-width: 250px;">
+        <section uk-sticky="offset: 80" class="left-scroll">
+            <div class="uk-visible@m left-nav">
+                
+                    <div data-sc-scrollbar="visible-y">
+                        <ul class="uk-nav uk-nav-default uk-nav-parent-icon uk-list" data-uk-nav>
+                            <li><h5 class="uk-text uk-text-bold">Applications</h5></li>
+                            <li class="uk-active"><a class="nav-app" href="index.html"><span uk-icon="comment" class="uk-margin-small-right"></span> Dashboard</a></li>
+                            <li class=""><a class="nav-app" href="forms.html"><span uk-icon="comment" class="uk-margin-small-right"></span> Form</a></li>
+                            <li class=""><a class="nav-app" href="tables.html"><span uk-icon="file-text" class="uk-margin-small-right"></span> Tables</a></li>
+                            <li class=""><a class="nav-app" href="cards.html"><span uk-icon="mail" class="uk-margin-small-right"></span> Cards</a></li>
+                            <li class=""><a class="nav-app" href="#"><span uk-icon="calendar" class="uk-margin-small-right"></span> Task Board</a></li>
+                            <li class=""><a class="nav-app" href="#"><span uk-icon="file-pdf" class="uk-margin-small-right"></span> Notes</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><h5 class="uk-text uk-text-bold">Menu</h5></li>
+                            <li class="uk-active"><a class="nav-app" href="#"><span uk-icon="comment" class="uk-margin-small-right"></span> Dashboard</a></li>
+                            <li class="uk-parent">
+                                <a class="uk-link-text nav-app" href="#"><span uk-icon="file-text"></span> Forms</a>
+                                <ul class="uk-nav-sub uk-list">
+                                    <li><a class="uk-link-text" href="#"><span uk-icon="cloud-upload"></span> File Upload</a></li>
+                                    <li><a class="uk-link-text" href="#"><span uk-icon="file"></span> Files</a></li>
+                                </ul>
+                            </li>
+                            <li class="uk-parent">
+                                <a class="uk-link-text nav-app" href="#"><span uk-icon="file-text"></span> Components</a>
+                                <ul class="uk-nav-sub uk-list">
+                                    <li><a class="uk-link-text" href="#"><span uk-icon="cloud-upload"></span> File Upload</a></li>
+                                    <li><a class="uk-link-text" href="#"><span uk-icon="file"></span> Files</a></li>
+                                </ul>
+                            </li>
+                            <li class="uk-parent">
+                                <a class="uk-link-text nav-app" href="#"><span uk-icon="file-text"></span> Pages</a>
+                                <ul class="uk-nav-sub uk-list">
+                                    <li><a class="uk-link-text" href="#"><span uk-icon="cloud-upload"></span> File Upload</a></li>
+                                    <li><a class="uk-link-text" href="#"><span uk-icon="file"></span> Files</a></li>
+                                </ul>
+                            </li>
+                            <li class="uk-parent">
+                                <a class="uk-link-text nav-app" href="#"><span uk-icon="file-text"></span> Plugins</a>
+                                <ul class="uk-nav-sub uk-list">
+                                    <li><a class="uk-link-text" href="#"><span uk-icon="cloud-upload"></span> File Upload</a></li>
+                                    <li><a class="uk-link-text" href="#"><span uk-icon="file"></span> Files</a></li>
+                                </ul>
+                            </li>
+                            <li class="uk-parent">
+                                <a class="uk-link-text nav-app" href="#"><span uk-icon="file-text"></span> Plugins</a>
+                                <ul class="uk-nav-sub uk-list">
+                                    <li><a class="uk-link-text" href="#"><span uk-icon="cloud-upload"></span> File Upload</a></li>
+                                    <li><a class="uk-link-text" href="#"><span uk-icon="file"></span> Files</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- body contents  -->
+        <div class="uk-width-expand@m uk-margin-remove padding-remove">
+        <section class="content1 uk-container">
+                <!-- Header box  -->
+                <div uk-grid>
+                        <div class="uk-width-1-3@m uk-width-1-2@s">
+                            <div class="uk-card email-card">
+                                <div uk-grid>
+                                    <div class="uk-width-3-5">
+                                        <h3>45000</h3>
+                                        <p>Visitors</p>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                            <p><img src="icons/global.svg" alt="" width="50"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-3@m uk-width-1-2@s">
+                            <div class="uk-card email-card">
+                                <div uk-grid>
+                                    <div class="uk-width-3-5">
+                                        <h3>45000</h3>
+                                        <p>Visitors</p>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <p><img src="icons/shield.svg" alt="" width="50"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-3@m uk-width-1-2@s">
+                            <div class="uk-card email-card">
+                                <div uk-grid>
+                                    <div class="uk-width-3-5">
+                                        <h3>45000</h3>
+                                        <p>Visitors</p>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <p><img src="icons/graduation.svg" alt="" width="50"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                <div uk-grid>
+                    <div class="uk-width-1-3@m uk-width-1-2@s">
+                        <div class="uk-card email-card">
+                            <h3>Email Marketing</h3>
+                            <h4>Delivered</h4>
+                            <progress class="uk-progress" value="30" max="100"></progress>
+                            <hr>
+                            <h4>Opened</h4>
+                            <progress class="uk-progress" value="50" max="100"></progress>
+                            <hr>
+                            <h4>Clicked</h4>
+                            <progress class="uk-progress" value="20" max="100"></progress>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-3@m uk-width-1-2@s">
+                        <div class="uk-card email-card">
+                            <h3>Shop Order</h3>
+                            <p class="uk-text-meta">Quick Info</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <hr>
+                            <h4>Opened</h4>
+                            <progress class="uk-progress" value="50" max="100"></progress>
+                            <hr>
+                            <p class="uk-text-meta">Quick Info</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-3@m uk-width-1-2@s">
+                        <div class="uk-card email-card">
+                            <h3>Email Marketing</h3>
+                            <p class="uk-text-meta">Quick Info</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                            <hr>
+                            <h4>Opened</h4>
+                            <progress class="uk-progress" value="50" max="100"></progress>
+                            <hr>
+                            <p class="uk-text-meta">Quick Info</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div uk-grid>
+                    
+                        <div class="uk-width-1-2@m">
+                            <div id="curve_chart"></div>
+                        </div>
+                    
+                    
+                        <div class="uk-width-1-2@m">
+                                <div id="chart_div"></div>
+                        </div>
+                    
+                </div>
+                <div uk-grid>
+                    
+                        <div class="uk-width-1-2@m">
+                                <div id="area_div"></div>
+                        </div>
+                        <div class="uk-width-1-2@m">
+                            <div id="piechart"></div>
+                        </div>
+                   
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>SIDDI CLASSES</title>
+</head>
+<body>
+    <!-- topbar section  -->
+    <section class="uk-visible@m"  style="background-color: rgb(150, 20, 111); color: white;">
+        <div class="uk-container uk-text-center ">
+            <div class="uk-grid uk-padding-small uk-text-uppercase ">
+                <p > <span uk-icon="icon: mail"> </span> info@siddiclasses.org </p>
+                <p> <span uk-icon="icon: phone"> </span>  96326 55303 / 70222 82303</p>
+
+                
+                    <p> <span uk-icon="icon: list"> </span> VISIT SIDDIONLINE.COM</p>
+                    <p class=""> <span uk-icon="credit-card"></span> PAY FEES ONLINE</p>
+                
+            </div>
+        </div>
+    </section>
+
+        <header>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-box-shadow-small" style="background-color: white; " uk-navbar style="position: relative; z-index: 9999;">
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        
+                        <li class="uk-active"><a href="#"><img src="images/logo.png" alt="" width="300"> </a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-visible@m">
+        
+                    <ul class="uk-panel uk-navbar-nav uk-text-uppercase">
+                        <li class=""><a href="index.html">Home</a></li>
+                        <li class=""><a href="#">About</a>
+                            <div class="uk-navbar-dropdown uk-margin-remove">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="about.html">About Siddi Classes</a></li>
+                                    <li><a href="why_siddi.html">Why Siddi Classes</a></li>
+                                    <li><a href="hostel_facility.html">Hostel Facility</a></li>
+                                    <li><a href="about_blog.html">Blog</a></li>
+                                    <li><a href="admission_process.html">Admission Process</a></li>
+                                    <li><a href="new_admission.html">New Admission Registration</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="#">Admissions</a></li>
+                        <li class=""><a href="#">Results </a>
+                            <div class="uk-navbar-dropdown uk-margin-remove">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="jee_pu.html">JEE MAINS & PU MARCH 2019 RESULTS</a></li>
+                                    <li><a href="neet.html">Neet 2019 Results</a></li>
+                                    <li><a href="jee_main.html">Jee Mains January 2019</a></li>
+                                    <li><a href="puc.html">PUC March 2019  CBSC  12th 2019 March</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="#">Programs</a>
+                            <div class="uk-navbar-dropdown uk-margin-remove">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="residential_program.html">Full Time Residential Program</a></li>
+                                    <li><a href="seat_program.html">Seat guarantee Program</a></li>
+                                    <li><a href="talent_program.html">Talent Rewand Test</a></li>
+                                    <li><a href="courses.html">Courses</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="services.html">Services</a></li>
+                        <li class=""><a href="careers.html">Careers</a></li>
+                        <li class=""><a href="contact.html">Contact</a></li>
+                        <li class=""><a href="faq.html">FAQ</a></li>
+                    </ul>
+        
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-hidden@m"><a href="#offcanvas-usage" uk-toggle> <img src="icon/menu-symbol-of-three-parallel-lines.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- offcanvas section -->
+    
+    <div id="offcanvas-usage" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <!-- <ul class="uk-panel  uk-nav uk-nav-parent-icon uk-list uk-text-uppercase" data-uk-nav> -->
+            <ul class=" uk-nav uk-nav-parent-icon uk-list uk-text-uppercase" data-uk-nav uk-accordion>
+                <li class=""><a href="index.html">Home</a></li>
+                <li class="uk-parent ">
+                    <a class="" href="#">About</a>
+                        <ul class="uk-nav uk-nav-sub uk-list uk-navbar-dropdown-nav">
+                            <li><a href="about.html">About Siddi Classes</a></li>
+                            <li><a href="why_siddi.html">Why Siddi Classes</a></li>
+                            <li><a href="hostel_facility.html">Hostel Facility</a></li>
+                            <li><a href="about_blog.html">Blog</a></li>
+                            <li><a href="admission_process.html">Admission Process</a></li>
+                            <li><a href="new_admission.html">New Admission Registration</a></li>
+                        </ul>
+                </li>
+                <li class=""><a href="#">Admissions</a></li>
+                <li class="uk-parent "><a href="#">Results </a>
+                        <ul class="uk-nav uk-nav-sub uk-list uk-navbar-dropdown-nav">
+                            <li><a href="jee_pu.html">JEE MAINS & PU MARCH 2019 RESULTS</a></li>
+                            <li><a href="neet.html">Neet 2019 Results</a></li>
+                            <li><a href="jee_main.html">Jee Mains January 2019</a></li>
+                            <li><a href="puc.html">PUC March 2019  CBSC  12th 2019 March</a></li>
+                        </ul>
+                </li>
+                <li class="uk-parent "><a href="#">Programs</a>
+                        <ul class="uk-nav uk-nav-sub uk-list uk-navbar-dropdown-nav">
+                            <li><a href="residential_program.html">Full Time Residential Program</a></li>
+                            <li><a href="seat_program.html">Seat guarantee Program</a></li>
+                            <li><a href="talent_program.html">Talent Rewand Test</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                        </ul>
+                </li>
+                <li class=""><a href="services.html">Services</a></li>
+                <li class=""><a href="careers.html">Careers</a></li>
+                <li class=""><a href="contact.html">Contact</a></li>
+                <li class=""><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- header  section  -->
+    <div class="uk-position-relative" tabindex="-1" uk-slideshow="ratio: 14:3;">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img class="slider-img" src="images/gb-about.jpg" alt="" uk-cover>
+            </li>
+        </ul>
+    </div>
+
+    <!-- breadcrumb section  -->
+    <section class=" uk-navbar-container ">
+        <div class="uk-container uk-padding-small uk-child-width-1-2" uk-grid>
+            <h2 class="uk-text-bold">Cloud</h2>
+            <div class="uk-text-bold">
+                <ul class="uk-flex-right uk-breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>Cloud</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- result section  -->
+    <section>
+        <div class="uk-container uk-margin">
+            <img class="uk-align-center" src="images/results/jee.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- popup admission open section  -->
+    <section class="uk-container">
+            <div class="message uk-padding uk-margin-bottom">
+                <div uk-grid>
+                    <div class="uk-width-2-3@s">
+                        <h2 class="uk-text-warning uk-text-capitalize uk-text-center">ADMISSION OPEN – I & II PUC FOR ACADEMIC YEAR 2019-20</h2>
+                    </div>
+                    <div class="uk-width-expand@s">
+                        <button class="uk-button siddi-button uk-margin-top" uk-icon="arrow-right">REGISTER ONLINE</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!-- footer section start  -->
+
+    <!-- News Letter Section  -->
+    <section class=" uk-text-center" style="background-color: rgb(150, 20, 111); color: white;">
+        <div class="uk-container">
+            <div class="uk-padding uk-margin-remove-bottom" uk-grid>
+                <h2 class="uk-text-center uk-text-capitalize uk-text-bold" style="color: white;"> OUR NEWSLETTER</h2>
+                <input class="uk-margin-large-left uk-input uk-form-width-large" type="text" placeholder="Enter Your Email Address">
+                <button class="uk-margin-remove uk-button uk-button-secondary uk-text-capitalize uk-align-right"> Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- siddi classes section  -->
+    <section class="uk-padding " style="background-color: rgb(124, 10, 105); ">
+        <div class="uk-text-center">
+            <p><a href="index.html"><img src="images/footer-logo.png" alt=""></a></p>
+            <p class="txt-white">Best Coaching Classes for competitive exams - JEE Main & Advanced, BITSAT, NEET & AIIMS. </p>
+            <p>> <a href="#">Read more</a></p>
+            <p><a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="google-plus"></a>
+                <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="behance"></a>
+            </p>
+
+        </div>
+    </section>
+
+    <!-- footer section  -->
+    <section class="uk-padding " style="background-color: rgb(87, 6, 73); color: white; font-size: 13px;">
+        <div class="uk-child-width-1-3@s uk-text-uppercase" uk-grid>
+            <div>
+                <h4 style="color: white">GET IN TOUCH</h4>
+                <p><span uk-icon="location"></span> 707/4, 4th Main, 6th B Cross, Opp New Chaya Hospital, OMBR Layout, Banaswadi, Bangalore - 560043 
+                </p>
+                <p><span uk-icon="phone"></span> 96326 55303 / 70222 82303</p>
+                <p><span uk-icon="mail"></span> info@siddiclasses.org</p>
+            </div>
+            <div>
+                <h4 style="color: white">Latest news</h4>
+                <div>
+                        <a href="#" class="uk-link-text"><p>
+                        <div style="float: left; margin-right: 5px;">
+                            <img src="images/blog/fw32.jpg" alt="" width="80px">
+                        </div>
+                            Event – Seniors’ Farewell 2018 
+                        <br> January 27, 2018 </p></a>
+                        <a  href="#" class="uk-link-text"><p>
+                        <div style="float: left; margin-right: 5px;">
+                            <img src="images/blog/cd28.jpg" alt="" width="80px">
+                        </div>
+                        Event – Children’s Day Celebration 2017
+                        <br> November 15, 2017  </p></a>
+                   
+                </div>
+            </div>
+            
+            <div >
+                <h4 style="color: white" class="uk-text-capitalize">Quick Enquiry</h4>
+                <form>
+                    <fieldset class="uk-fieldset">
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Name" maxlength="50" required>
+                        </div>
+                        <div class="uk-margin">
+                            <select class="uk-select">
+                                <option value="">Subject – Select An Option</option>
+                                <option value="Admission Enquiry">Admission Enquiry</option>
+                                <option value="Entrance Test Enquiry">Entrance Test Enquiry</option>
+                                <option value="Visit to Center">Visit to Center</option>
+                                <option value="Student Counseling">Student Counseling</option>
+                            </select>
+                        </div>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" pattern="[6-9]{1}[0-9]{9}" maxlength="10" placeholder="Mobile" required>
+                        </div>
+                        <button class="uk-button siddi-button uk-border-rounded">Send</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <p></p>
+    </section>
+
+    <!-- footer copyright section  -->
+    <nav class="uk-container">
+        <div class="uk-grid">
+
+            <ul class="uk-navbar-nav">
+                <li><a href="about_blog.html">BLOG</a></li>
+                <li><a href="careers.html">CAREERS</a></li>
+                <li><a href="#">ADMISSIONS</a></li>
+            </ul>
+
+        
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav">
+                <li><a href="#"> &copy 2018 SIDDI CLASSES PVT LTD</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/active.js"></script>
+
+    
+
+</body>
+</html>

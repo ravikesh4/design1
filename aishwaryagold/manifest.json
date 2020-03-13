@@ -1,0 +1,35 @@
+{
+    "name": "Aishwarya Gold",
+    "short_name": "AishwaryaGold",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#000",
+    "description": "Gold Buyers.",
+    "icons": [{
+      "src": "static_media/images/aishwarya_outlines.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }, {
+      "src": "static_media/images/aishwarya_outlines.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }, {
+      "src": "static_media/images/aishwarya_outlines.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }, {
+      "src": "static_media/images/aishwarya_outlines.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "static_media/images/aishwarya_outlines.png",
+      "sizes": "168x168",
+      "type": "image/png"
+    }, 
+    {
+      "src": "static_media/images/aishwarya_outlines.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }]
+    
+  }

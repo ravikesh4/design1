@@ -1,0 +1,107 @@
+
+
+/* @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"; */
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+body {
+    background-color: rgb(237, 237, 238);
+    font-family: 'Karla', sans-serif;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #6f00f8;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.main-nav {
+    overflow: auto;
+    height: 100vh;
+    /* position: fixed; */
+}
+
+.sub-menu {
+    padding-left: 20px;
+}
+
+.nav-list {
+    color: white;
+    /* background-color: white; */
+    padding: 7px;
+}
+li {
+    list-style-type: none;
+}
+
+.nav-link {
+    color: rgb(228, 228, 228);
+    
+    /* font-size: 16px; */
+}
+
+
+
+
+.nav-link:hover {
+    color: rgb(206, 206, 206);
+}
+.active {
+    background-color: rgb(43, 43, 43);
+    color: black;
+    
+}
+
+
+/* content section css  */
+
+.card1 {
+    background-color: rgb(240, 93, 74);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.card2 {
+    background-color: rgb(238, 154, 29);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.card3 {
+    background-color: rgb(56, 126, 231);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.card4 {
+    background-color: rgb(64, 231, 48);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#content {
+    width: 100%;
+    
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.content {
+    padding: 0 20px;
+}
+
+.breadcrumb {
+    background-color: rgb(199, 199, 199);
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    
+}

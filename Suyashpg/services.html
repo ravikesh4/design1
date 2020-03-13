@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="shortcut icon" type="image/png" href="images/title.png" />
+
+    <title>SUYUSH PG</title>
+</head>
+<body>
+    <!-- navbar section  -->
+    <header>
+        <div class="uk-position-relative">
+            <!-- <img src="images/header/4.jpg" alt=""> -->
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1"  uk-slideshow="autoplay: true; animation: fade;ratio: 8:2;min-height: 400; ">
+
+                <ul class="uk-slideshow-items">
+                    <li class="uk-blend-multiply uk-overlay uk-overlay-primary">
+                        <img class="slider-img img-height uk-blend-multiply" src="images/header/1.jpg" alt="" uk-cover >
+                        <div class="uk-position-center  uk-text-center uk-light">
+                            <div class="uk-padding uk-text-center animated zoomIn" uk-slideshow-parallax="x: 1000,1,1">
+                                <h1 class="uk-text-uppercase slider-heading uk-text-bold">Services</h1>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-position-top">
+                <nav class="uk-navbar-container uk-navbar-transparent " uk-navbar uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: nav-header; top: 100">
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            
+                            <li class="uk-active"><a href="#"><img src="images/logo-1.png" alt="" width="80px"> </a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right uk-visible@m">
+            
+                        <ul class="uk-panel uk-navbar-nav uk-text-uppercase">
+                            <li class=""><a class="link-nav" href="index.html">Home</a></li>
+                            <li class=""><a class="link-nav" href="about.html">About Us</a></li>
+                            <li class=""><a class="link-nav" href="#">Location</a>
+                                <div class="uk-navbar-dropdown uk-margin-remove"style="width: 300px;">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav" >
+                                        <li><a href="marathahalli.html">Suyash PG Marathahalli</a></li>
+                                        <li><a href="mg_road.html">Suyash PG MG Road</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class=""><a class="link-nav" href="feature.html">Features</a></li>
+                            <li class=""><a class="link-nav" href="services.html">Services</a></li>
+                            <li class=""><a class="link-nav" href="gallery.html">Gallery</a></li>
+                            <li class=""><a class="link-nav" href="blog.html">Blogs</a></li>
+                            <li class=""><a class="link-nav" href="faq.html">FAQ</a></li>
+                            <li class=""><a class="link-nav" href="contact.html">Contact Us</a></li>
+                        </ul>
+            
+                    </div>
+                    <div class="uk-navbar-right uk-hidden@m">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-hidden@m"><a href="#offcanvas-usage" uk-toggle> <img src="icon/menu-symbol-of-three-parallel-lines.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- offcanvas section  -->
+    <div id="offcanvas-usage" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <!-- <ul class="uk-panel  uk-nav uk-nav-parent-icon uk-list uk-text-uppercase" data-uk-nav> -->
+            <ul class=" uk-nav uk-nav-parent-icon uk-list uk-text-uppercase" data-uk-nav uk-accordion>
+                <li class="uk-active"><a href="#"><img src="images/logo-1.png" alt="" width="80px"> </a></li>
+                <li class=""><a href="index.html">Home</a></li>
+                <li class=""><a href="about.html">About Us</a></li>
+                <li class="uk-parent "><a href="#">Location</a>
+                    <ul class="uk-nav uk-nav-sub uk-list uk-navbar-dropdown-nav">
+                        <li><a href="marathahalli.html">Suyash PG Marathahalli</a></li>
+                        <li><a href="mg_road.html">Suyash PG MG Road</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="feature.html">Features</a></li>
+                <li class=""><a href="services.html">Services</a></li>
+                <li class=""><a href="gallery.html">Gallery</a></li>
+                <li class=""><a href="blog.html">Blogs</a></li>
+                <li class=""><a href="faq.html">FAQ</a></li>
+                <li class=""><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- end of nav section  -->
+
+    <!-- Services Section  -->
+    <section class="uk-container uk-padding">
+        <h1 class="uk-text-bolder uk-text-center uk-padding uk-text-uppercase">Our Services</h1>
+        <div class="uk-child-width-1-2@s" uk-grid uk-height-match="img"  uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 200">
+        <div>
+            <div uk-grid>
+            <div class="uk-width-1-2@s">
+                <img src="images/services/paying-guest-service.jpg" alt="paying-guest-service">
+            </div>
+            <div class=" uk-width-1-2@s uk-text-uppercase">
+                <h4 class="uk-margin-remove uk-text-bold">Paying Guest Services</h4>
+                <!-- <h4 class="uk-margin-remove uk-text-bold">Bangalore’s Most Iconic Breakfast Places</h4> -->
+                <p>We provide long term stay facilities to individual and corporate inclusive of tasty North Indian and South India food with all amenities like TV, Fridge, Wardrobe, Washing Machine in a …</p>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div uk-grid>
+                <div class="uk-width-1-2@s">
+                    <img src="images/services/Service Apartment.jpg" alt="Service Apartment">
+                </div>
+            <div class="uk-width-1-2@s uk-text-uppercase">
+                <h4 class="uk-margin-remove uk-text-bold">Service Apartment</h4>
+                <!-- <h4 class="uk-margin-remove uk-text-bold">Bangalore’s Most Iconic Breakfast Places</h4> -->
+                <p>We provide single sharing rooms like a serviced apartment which is a fully furnished room available for short-term or long-term stay with hotel like facilities, service and security in a …</p>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div uk-grid>
+                <div class="uk-width-1-2@s">
+                    <img src="images/services/Rooms for Frequent Fliers.jpg" alt="Rooms for Frequent Fliers">
+                </div>
+            <div class="uk-width-1-2@s uk-text-uppercase">
+                <h4 class="uk-margin-remove uk-text-bold">Rooms for Frequent Fliers</h4>
+                <!-- <h4 class="uk-margin-remove uk-text-bold">Bangalore’s Most Iconic Breakfast Places</h4> -->
+                <p>We also provide budget staying opportunity for frequent fliers for short stay with hotel like services.</p>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div uk-grid>
+                <div class="uk-width-1-2@s">
+                    <img src="images/services/Rooms for Medical Tourist.jpg" alt="Rooms for Medical Tourist">
+                </div>
+            <div class="uk-width-1-2@s uk-text-uppercase">
+                <h4 class="uk-margin-remove uk-text-bold">Rooms for Medical Tourist</h4>
+                <!-- <h4 class="uk-margin-remove uk-text-bold">Bangalore’s Most Iconic Breakfast Places</h4> -->
+                <p>We also provide Long term staying opportunity for Medical Tourist with hotel like services.</p>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+
+
+
+
+
+
+
+
+    <!-- floating button chat section  -->
+    <div class="chat-button">
+        <button class="chat-btn uk-button-default" href="#chat-model" uk-toggle><i uk-icon="icon: comment"></i ></button>
+
+    </div>
+    <div id="chat-model" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical animated zoomInUp chat-box">
+    
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-text-uppercase uk-text-center slider-heading uk-text-bold">Contact Us</h2>
+                        <form>
+                            <fieldset class="uk-fieldset">
+                                <div class="uk-margin">
+                                    <input class="uk-input" type="text" placeholder="Name" maxlength="60" required>
+                                </div>
+                                <div class="uk-margin">
+                                    <input class="uk-input" type="email" placeholder="Email" maxlength="100" required>
+                                </div>
+                                <div class="uk-margin">
+                                    <input class="uk-input" type="text" pattern="[6-9]{1}[0-9]{9}" maxlength="10" placeholder="Mobile" required>
+                                </div>
+                                <div class="uk-margin">
+                                    <select class="uk-select">
+                                        <option value="">Location – Select An Option</option>
+                                        <option value="Marathahalli">Marathahalli</option>
+                                        <option value="Kundalahalli">Kundalahalli</option>
+                                        <option value="MG Road">MG Road</option>
+                                        </select>
+                                </div>
+                                <button class="uk-button uk-button-primary uk-border-rounded">Send</button>
+                            </fieldset>
+                        </form>
+            
+    
+        </div>
+    </div>
+    <!-- footer section  -->
+    <section class="uk-padding " style="background-color: rgb(0, 0, 0); color: white; font-size: 13px;">
+        <div class="uk-visible@s uk-child-width-1-3@s uk-text-uppercase" uk-grid>
+            <div>
+                <h4 style="color: white">GET IN TOUCH</h4>
+                <h4 class="uk-light"><b> Corporate Office </b></h4>
+                <p><span uk-icon="location"></span>
+                    10th Cross, Tulsi Theatre Road, Marathalli, Behind innovative multiplex Bangalore-560037
+                </p>
+                <p><span uk-icon="phone"></span> 9739003042, 9900733366,7348888811</p>
+                <p><span uk-icon="mail"></span> pgsuyash@gmail.com</p>
+            </div>
+            <div class="uk-text-center">
+                <h4 class="uk-light"><b>Get in Touch</b></h4>
+                <p><a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                    <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="google-plus"></a>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="behance"></a>
+                </p>
+    
+            </div>
+            <div>
+                <h4 style="color: white">Latest news</h4>
+                <div>
+                        <a href="#" class="uk-link-text"><p>
+                        <div style="float: left; margin-right: 5px;">
+                            <img src="images/suyash-blog-image-300x150.jpeg" alt="" width="80px">
+                        </div>
+                            Event – Seniors’ Farewell 2018 
+                        <br> January 27, 2018 </p></a>
+                        <br>
+                        <a  href="#" class="uk-link-text"><p>
+                        <div style="float: left; margin-right: 5px;">
+                            <img src="images/suyash-blog-image-300x150.jpeg" alt="" width="80px">
+                        </div>
+                        Event – Children’s Day Celebration 2017
+                        <br> November 15, 2017  </p></a>
+                   
+                </div>
+            </div>
+            
+           
+        </div>
+        <p class="uk-margin-remove uk-text-center"> &copy <a class="uk-link-text" href="https://www.netzary.com/">Netzary infodynamics</a></p>
+    </section>
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/active.js"></script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="description" content="Netzary Mail" />
+            <meta name="author" content="Netzary Mail" />
+            <title>Netzary | Mailbox</title>
+            <link rel="stylesheet" href="css/bootstrap.css" id="style-resource-4">
+            <link rel="stylesheet" href="css/neon-core.css" id="style-resource-5">
+            <link rel="stylesheet" href="css/neon-theme.css" id="style-resource-6">
+            <link rel="stylesheet" href="css/neon-forms.css" id="style-resource-7">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="js/jquery-1.11.3.min.js"></script>
+	</head>
+    <body class="page-body">
+        <div class="page-container">
+            <div class="main-content ">
+                <div class="row shadow-primary navbar-fixed-top " style="background-color: white; padding: 5px;">
+                    <!-- Profile Info and Notifications -->
+                    <div class="container col-md-6 col-sm-8 clearfix ">
+                        <ul class="user-info pull-left pull-none-xsm">
+                            <!-- Profile Info -->
+                            <li class="profile-info dropdown">
+                                <!-- add class "pull-right" if you want to place this from right -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="images/thumb-1%402x.png" alt="" class="img-circle" width="44" />
+                                    John Henderson
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- Reverse Caret -->
+                                    <li class="caret"></li>
+                                    <!-- Profile sub-links -->
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>Edit Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>Inbox</a>
+                                    </li>
+                                    <li>
+                                        <a href="calendar.html">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="user-info pull-left pull-right-xs pull-none-xsm">
+                            <!-- Raw Notifications -->
+                            <li class="notifications dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span class="badge badge-info">6</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="top">
+                                        <p class="small">
+                                            <a href="#" class="pull-right">Mark all Read</a>You have<strong>3</strong> new notifications.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown-menu-list scroller">
+                                            <li class="unread notification-success">
+                                                <a href="#">
+                                                    <i class="fa fa-user-plus pull-right" aria-hidden="true"></i>
+                                                    <span class="line">
+                                                        <strong>New user registered</strong>
+                                                    </span>
+                                                    <span class="line small">30 seconds ago</span>
+                                                </a>
+                                            </li>
+                                            <li class="unread notification-secondary">
+                                                <a href="#">
+                                                    <i class="fa fa-heart pull-right"></i>
+                                                    <span class="line">
+                                                        <strong>Someone special liked this</strong>
+                                                    </span>
+                                                    <span class="line small">2 minutes ago</span>
+                                                </a>
+                                            </li>
+                                            <li class="notification-primary">
+                                                <a href="#">
+                                                    <i class="fa fa-user pull-right"></i>
+                                                    <span class="line">
+                                                        <strong>Privacy settings have been changed</strong>
+                                                    </span>
+                                                    <span class="line small">3 hours ago</span>
+                                                </a>
+                                            </li>
+                                            <li class="notification-danger">
+                                                <a href="#">
+                                                    <i class="fa fa-ban pull-right"></i>
+                                                    <span class="line">John cancelled the event</span>
+                                                    <span class="line small">9 hours ago</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="external">
+                                        <a href="#">View all notifications</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Raw Links -->
+                    <div class="col-md-6 col-sm-4 clearfix hidden-xs">
+                        <ul class="list-inline links-list pull-right">
+                            <li class="dropdown language-selector">
+                                Language: &nbsp;
+
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                                    <img src="images/flags/flag-uk.png" width="16" height="16" />
+                                </a>
+                                
+                            </li>
+                            <li class="sep"></li>
+                            <li>
+                                <a href="login.html"> Logout 
+                                    <i class="fa fa-sign-out right"></i></a>
+                            </li>
+                            <li class="sep"></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="mail-env" style="margin-top: 40px;">
+                    <!-- compose new email button -->
+                    <div class="mail-sidebar-row visible-xs fixed-top">
+                        <a href="#" class="btn btn-success btn-icon btn-block"  data-toggle="modal" data-target="#compose">
+                            Compose Mail
+                            <i class="fa fa-pencil" aria-hidden="true"></i> 
+                        </a>
+                    </div>
+
+                    <!-- content start  here  -->
+                    <div class="mail-body">
+                        <div class="mail-header">
+                                <!-- title -->
+                                
+                                <div class="mail-title">
+                                        <a href="index.html" class="btn btn-small btn-default"><b><i class="fa fa-arrow-left" aria-hidden="true"></i></b></a>
+                                        Profile
+                                </div>
+                            </div>
+                        <!-- profile details -->
+                        <div class="profile-env">
+				<header class="row">
+					
+					<!-- <div class="col-sm-7">
+						<ul class="profile-info-sections">
+							<li>
+								<div class="profile-name"> <strong> <a href="#">Art Ramadani</a> <a href="#" class="user-status is-online tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Online"></a> </strong>  <span><a href="#">Co-Founder at Laborator</a></span> 
+								</div>
+							</li>
+							<li>
+								<div class="profile-stat">
+									<h3>643</h3>  <span><a href="#">followers</a></span> 
+								</div>
+							</li>
+							<li>
+								<div class="profile-stat">
+									<h3>108</h3>  <span><a href="#">following</a></span> 
+								</div>
+							</li>
+						</ul>
+					</div> -->
+					<section class="profile-info-tabs">
+					<div class="row">
+                        <div class="col-sm-2">
+						<a href="#" class="profile-picture">
+							<img src="images/thumb-1%402x.png" class="img-responsive img-circle" />
+						</a>
+					</div>
+						<div class="col-sm-10">
+							<ul class="user-details">
+								<li>
+									<a href="#"> <i class="entypo-name"></i>
+										Ravikesh Yadav</a>
+								</li>
+								<li>
+                                        <a href="mailto: ravikesh@netzary.com"><i class="entypo-name"></i>
+										Email: <span> ravikesh@netzary.com</a></span> 
+                                </li>
+                                <li>
+									<a href="#"> <i class="entypo-calendar"></i>
+										Mobile: <a href="tel: 7411966489">7411966489</a></a>
+								</li>
+								<li>
+									<a href="#"> <i class="entypo-calendar"></i>
+										DOB: 16 October</a>
+								</li>
+							</ul>
+							<!-- tabs for the profile links -->
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#profile-info">Profile</a>
+								</li>
+								<li><a href="#profile-edit"   data-toggle="modal" data-target="#profile-edit">Edit Profile</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				</header>
+				
+				
+			</div>
+                        
+                    </div>
+
+
+
+                    <!-- Sidebar -->
+                    
+                    <div>
+                        <div class="mail-sidebar">
+                            <!-- compose new email button -->
+                            <div class="mail-sidebar-row hidden-xs">
+                                <a  data-toggle="modal" data-target="#compose" class="btn btn-success btn-icon btn-block">
+                                Compose Mail
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <!-- menu -->
+                            <ul class="mail-menu">
+                                <li class="active">
+                                    <a href="#">
+                                        <span class="badge badge-danger pull-right">6</span>
+                                        Inbox
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="badge badge-gray pull-right">1</span>
+                                        Sent
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Drafts</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="badge badge-gray pull-right">1</span>Spam
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Trash</a>
+                                </li>
+                            </ul>
+                            <div class="mail-distancer"></div>
+                            <h4>Tags</h4>
+                            <!-- menu -->
+                            <ul class="mail-menu">
+                                <li>
+                                    <a href="#">
+                                        <span class="badge badge-danger badge-roundless pull-right"></span>Business</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="badge badge-info badge-roundless pull-right"></span>Sports</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="badge badge-warning badge-roundless pull-right"></span>Friends</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer -->
+                <footer class="main text-center">
+                    &copy; 2019 
+                    <a href="#" target="_blank"><strong>Netzary</strong></a>
+                </footer>
+            </div>
+            
+        </div>
+
+
+        <!-- Compose Mail Modal -->
+        <div class="modal fade" id="compose" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                
+                <div class="mail-header">
+                    <!-- title -->
+                    <div class="mail-title">Compose Mail <i class="fa fa-pencil"></i></div>
+                    <!-- links -->
+                    
+                </div>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    <div class="mail-body">
+                            
+                            <div class="mail-compose">
+                                <form method="post" role="form">
+                                    <div class="form-group">
+                                        <label for="to">To:</label>
+                                        <input type="text" class="form-control" id="to" tabindex="1" />
+                                        <div class="field-options">
+                                            <a href="javascript:;" onclick="$(this).hide(); $('#cc').parent().removeClass('hidden'); $('#cc').focus();">Cc</a> 
+                                            <a href="javascript:;" onclick="$(this).hide(); $('#bcc').parent().removeClass('hidden'); $('#bcc').focus();">Bcc</a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group hidden">
+                                        <label for="cc">Cc:</label>
+                                        <input type="text" class="form-control" id="cc" tabindex="2" />
+                                    </div>
+                                    <div class="form-group hidden">
+                                        <label for="bcc">Bcc:</label>
+                                        <input type="text" class="form-control" id="bcc" tabindex="2" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject:</label>
+                                        <input type="text" class="form-control" id="subject" tabindex="1" />
+                                    </div>
+                                    <div class="compose-message-editor">
+                                        <label for="subject">Message:</label>
+                                        <textarea class="form-control" name="#" id="#"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+            </div>
+            <div class="modal-footer">
+                
+                <div class="mail-links">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close <i class="fa fa-ban"></i></button>
+                    <a href="#" class="btn btn-default btn-icon">Draft<i class="fa fa-tag"></i></a>
+                    <a class="btn btn-success btn-icon">Send<i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Edit Profile Model  -->
+        <div class="modal fade" id="profile-edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                
+                <div class="mail-header">
+                    <!-- title -->
+                    <div class="mail-title">Edit Profile <i class="fa fa-pencil"></i></div>
+                    <!-- links -->
+                    
+                </div>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    <div class="mail-body">
+                            
+                            <div class="mail-compose">
+                                <form method="post" role="form">
+                                    <div class="form-group">
+                                        <label for="profile-picture">profile-picture:</label>
+                                        <input type="file" class="form-control" id="profile-picture" tabindex="1" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="to">Name:</label>
+                                        <input type="text" class="form-control" id="to" tabindex="1" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Mobile:</label>
+                                        <input type="text" class="form-control" id="subject" tabindex="1" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dob">DOB:</label>
+                                        <input type="date" class="form-control" id="dob" tabindex="1" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+            </div>
+            <div class="modal-footer">
+                
+                <div class="mail-links">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close <i class="fa fa-ban"></i></button>
+                    <a href="#" class="btn btn-default btn-icon">Draft<i class="fa fa-tag"></i></a>
+                    <a class="btn btn-success btn-icon">Send<i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+        <script src="js/gsap/TweenMax.min.js" id="script-resource-1"></script>
+        <script src="js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js" id="script-resource-2"></script>
+        <script src="js/bootstrap.js" id="script-resource-3"></script>
+        <script src="js/resizeable.js" id="script-resource-5"></script>
+        <script src="js/neon-mail.js" id="script-resource-8"></script>
+        <!-- JavaScripts initializations and stuff -->
+        <script src="js/neon-custom.js" id="script-resource-10"></script>
+        <!-- Demo Settings -->
+        
+    </body>
+</html>

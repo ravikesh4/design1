@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+
+*:not(.fa){
+    font-family: 'Josefin Sans', serif !important;
+}
+/* index page */
+.index-about p {
+    margin: 2%;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 2%;
+    padding: 1%;
+    padding-top: 2%;
+    background-color: rgb(170, 173, 175)
+}
+
+.uk-container .about-heading {
+    margin-top: 3%;
+}
+
+.clients img{
+    object-fit: contain;
+}
+header>div{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    padding: 3%;
+    /* background-color: white; */
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-between
+}
+
+.uk-position-center h2 {
+    color: #000;
+    font-weight: 600;
+    /* font-size: ; */
+}
+
+.glow {
+    font-size: 3vw;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-weight: 700;;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+    }
+  }
+
+  .public-bosch {
+      margin-left: 40%;
+  }
+@media screen and (max-width: 900px) {
+    .contact-flex {
+        display: block;
+    }
+
+    .clients img {
+        width: 140px;
+        height: 140px;
+    }
+    .public-bosch {
+        margin-left: auto;
+    }
+
+    .uk-slideshow-items img {
+        object-fit: cover;
+    }
+}
+
+
+/* .uk-slideshow-items img {} */
+
+
+.uk-card a {
+    text-decoration: none;
+    color: #000;
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        
+        .header-menu {
+            padding: 2%;
+            background-color: #0002;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+        }
+        li {
+            list-style-type: none;
+        }
+        .item {
+            
+            display: flex;
+
+        }
+
+        li {
+            margin-left: 10%;
+            padding-top: 3%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;   
+        }
+        .sub-menu-open {
+            display: none;
+
+        }
+        .sub-menu:hover .sub-menu-open{
+        display: inline;
+        }
+
+        .sub-menu-open1 {
+            display: none;
+
+        }
+        .sub-menu1:hover .sub-menu-open1{
+        display: inline;
+        position: relative;
+        background-color: rgba(68, 64, 64, 0.333);
+        padding: 2px;
+        }
+
+
+    </style>
+</head>
+<body>
+        <section class="header-menu">
+                <div class="menu">
+                    <div class="logo">
+                        <li><a href="index.html"><img src="images/fastrack1.png" alt="Fastack Technologies LOGO"></a></li>
+                    </div>
+                    <div class="item">
+                        
+                            <li><a href="#">Home</a> </li>
+                            <li><a href="#">Home</a> </li>
+                            <li class="sub-menu"><a href="#">Home</a>
+                            <ul class="sub-menu-open">
+                                    <li><a href="#">Items</a> </li>
+                                    <li><a href="#">Items</a> </li>
+                                    <li class="sub-menu1"><a href="#">Items</a>
+                                    <ul class="sub-menu-open1">
+                                            <li><a href="#">Submenus</a> </li>
+                                            <li><a href="#">Submenus</a> </li>
+                                            <li><a href="#">Submenus</a> </li>
+                                            <!-- <li class="sub-menu"><a href="#">Home</a> -->
+                                    </ul>
+                                    </li>
+                                    <li><a href="#">Items</a> </li>
+                                    <li><a href="#">Items</a> </li>
+                            </ul>
+                            </li>
+                            <li><a href="#">Home</a> </li>
+                            <li><a href="#">Home</a> </li>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+        
+</body>
+</html>
